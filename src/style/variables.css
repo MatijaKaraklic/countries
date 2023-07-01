@@ -1,0 +1,17 @@
+:root {
+
+    --clr-primary-500: hsl(0, 0%, 21%);
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-100-020: hsla(0, 0%, 100%, 0.2);
+    --clr-neutral-200: hsl(0, 0%, 95%);
+    --clr-neutral-800: hsl(0, 0%, 18%);
+    --clr-neutral-900: hsl(0, 0%, 0%);
+    --clr-neutral-900-030: hsla(0, 0%, 0%, 0.3);
+
+
+    --ff-primary: 'Lexend Deca', sans-serif;
+
+    --header-background: linear-gradient(hsl(0, 0%, 15%) 0%, hsl(0, 0%, 25%) 95%, hsl(0, 0%, 75%) 100%);
+
+}
