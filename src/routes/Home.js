@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
 import Card from '../elements/Card';
 
@@ -21,7 +21,7 @@ function Home() {
     <div className='Home-body'>
       <div className='container Home-container'>
         {(data === null) ? (
-          (<p className='Home-loading'>Loading...</p>)
+          (<p className='loading'>Loading...</p>)
         ) : (
           data.map(country => {
             return (<Card data={{ country: country }} />);

@@ -9,6 +9,7 @@ import populationLogo from '../imgs/population.png';
 function Card(props) {
 
   const data = props.data.country;
+  const link = '/country/' + data.name.common;
 
   const getAllCapitals = (capitals) => {
     var text = '';
@@ -20,9 +21,10 @@ function Card(props) {
     if(text === '') text = '\u00A0';
     return text;
   }
+  
 
   return (
-    <div className='Card-body'>
+    <div className='Card-body' onClick={() => { window.location.href = link;}}>
       <div className='Card-img-container'>
         <img src={data.flags.png}/>
       </div>
