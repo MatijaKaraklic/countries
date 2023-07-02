@@ -4,6 +4,7 @@ import Header from './elements/Header';
 
 import Home from './routes/Home';
 import Info from './routes/Info';
+import Country from './routes/Country';
 
 import './App.css';
 import './style/cssreset.css';
@@ -18,7 +19,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="info" element={<Info />} />
+          <Route path="/info" element={<Info />} />
+          <Route path="/country/:name" element={<Country />} />
+          <Route path="*" element={<p> 404 </p>} />
         </Routes>
       </BrowserRouter>
     </div>

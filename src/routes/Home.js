@@ -21,7 +21,7 @@ function Home() {
     <div className='Home-body'>
       <div className='container Home-container'>
         {(data === null) ? (
-          'Loading...'
+          (<p className='Home-loading'>Loading...</p>)
         ) : (
           data.map(country => {
             return (<Card data={{ country: country }} />);
