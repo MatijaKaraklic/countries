@@ -11,13 +11,14 @@
 
 .Header-container h1 {
     font-size: 1.5em;
-    color: white;
+    color: var(--clr-neutral-100);
+    cursor: pointer;
 }
 
 .Header-container a {
     text-decoration: none;
     align-self: center;
-    color: white;
+    color: var(--clr-neutral-100);
     font-weight: 200;
 }
 

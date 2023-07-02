@@ -1,5 +1,55 @@
 .Card-body {
-    background-color: rgb(218, 218, 218);   
-    min-width: 32%;
+    width: 32%;
     margin-block: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+    .Card-body {
+        width: 48%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .Card-body {
+        width: 100%;
+    }
+}
+
+.Card-body:hover > .Card-img-container{
+    box-shadow: inset 0px 0px 50px 10px var(--clr-neutral-015);
+    transition-duration: 300ms;
+}
+
+.Card-img-container {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 20px 1px var(--clr-neutral-015);
+    transition: all 600ms ease-in;
+}
+
+.Card-body img {
+    width: 100%;
+    aspect-ratio: 5 / 3;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 0 5px var(--clr-neutral-030);
+    position: relative;
+    z-index: -10;
+}
+
+.Card-content {
+    border-top: 0;
+    border-radius: 0 0 15px 15px;
+    padding-inline: 20px;
+    padding-bottom: 15px;
+    transform: translateY(-15px);
+    box-shadow: inset 0px 0px 10px 5px var(--clr-neutral-075);
+    position: relative;
+    z-index: -11;
+}
+
+.Card-content h4 {
+    font-size: 1.5em;
+    padding-top: 25px;
 }

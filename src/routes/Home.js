@@ -23,9 +23,8 @@ function Home() {
         {(data === null) ? (
           'Loading...'
         ) : (
-          data.map(county => {
-            let data = JSON.stringify(county);
-            return (<Card data={data} />);
+          data.map(country => {
+            return (<Card data={{ country: country }} />);
           })
         )}
       </div>
