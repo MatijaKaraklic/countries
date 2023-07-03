@@ -19,6 +19,7 @@ function Home() {
 
   return (
     <div className='Home-body'>
+      {(data === null) ? (null) : (<input type='text' id='search-country' placeholder='Search country:' className='Home-input'/>)}
       <div className='container Home-container'>
         {(data === null) ? (
           (<p className='loading'>Loading...</p>)
