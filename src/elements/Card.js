@@ -9,7 +9,7 @@ import populationLogo from '../imgs/population.png';
 function Card(props) {
 
   const data = props.data.country;
-  const link = '/country/' + data.name.common;
+  const link = '/country/' + data.cca3;
 
   const getAllCapitals = (capitals) => {
     var text = '';

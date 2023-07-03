@@ -13,7 +13,7 @@ function Home() {
   // ?fields=name,flags,capital,population,area
 
   useEffect(() => {
-    fetch('https://restcountries.com/v3.1/all?fields=name,flags,capital,population,area').then(response => response.json()).then(json => {setData(json)});
+    fetch('https://restcountries.com/v3.1/all?fields=name,flags,capital,population,area,cca3').then(response => response.json()).then(json => {setData(json)});
   }, [])
 
 

@@ -20,8 +20,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/info" element={<Info />} />
-          <Route path="/country/:name" element={<Country />} />
-          <Route path="*" element={<p className='App-404'> 404 </p>} />
+          <Route path="/country/:cca3" element={<Country />} />
+          <Route path="*" element={<p className='error-404'> 404 </p>} />
         </Routes>
       </BrowserRouter>
     </div>

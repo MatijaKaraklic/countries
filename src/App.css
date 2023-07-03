@@ -6,6 +6,11 @@
     max-width: 1200px;
     padding-inline: 40px;
     margin: auto;
+    color: var(--clr-neutral-015) !important;
+}
+
+a {
+    color: var(--clr-neutral-015);
 }
 
 .loading {
@@ -16,7 +21,7 @@
     font-weight: 500;
 }
 
-.App-404 {
+.error-404 {
     margin: auto;
     margin-top: 100px;
     font-size: 6em;

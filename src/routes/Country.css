@@ -26,6 +26,27 @@
     border: 1px solid var(--clr-neutral-030);
 }
 
-.Country-coatOfArms {
-    margin: auto;
+.Country-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.Country-informations {
+    width: 49%;
+    box-shadow: inset 0px 0px 10px 5px var(--clr-neutral-075);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.Country-highlight {
+    font-weight: 600;
+}
+
+.Country-border-country {
+    text-decoration: none;
+}
+
+.Country-border-country:hover {
+    text-decoration: underline;
 }
