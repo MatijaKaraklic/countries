@@ -11,11 +11,9 @@ function Home() {
   const [search, setSearch] = useState('');
 
   // name, flags, capital, population, area
-  // ToDo: add img download to await;
-  // ?fields=name,flags,capital,population,area
+  // ?fields=name,flags,capital,population,area,cca3
 
   useEffect(() => {
-    console.log("PaPa");
     fetch('https://restcountries.com/v3.1/all?fields=name,flags,capital,population,area,cca3').then(response => response.json()).then(json => {setData(json)});
   }, []);
 
