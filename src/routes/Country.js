@@ -68,7 +68,7 @@ function Country() {
               {(data.borders === undefined) ? '\u00A0' : (
               data.borders.map(country => {
                 const link = '/country/' + country;
-                return (<span><a className='Country-border-country' href={link}>{country}</a>{'\u00A0'}</span>)
+                return (<span className='Country-border-country-span'><a className='Country-border-country' href={link}>{country}</a>{'\u00A0'}</span>)
               }))}
             </div>
           </div>

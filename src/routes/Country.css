@@ -45,6 +45,12 @@
     }
 }
 
+@media only screen and (max-width: 740px) {
+    .Country-name {
+        font-size: 2.5em;
+    }
+}
+
 .Country-informations {
     width: 49%;
     box-shadow: inset 0px 0px 10px 5px var(--clr-neutral-075);
@@ -54,6 +60,10 @@
 
 .Country-highlight {
     font-weight: 600;
+}
+
+.Country-border-country-span {
+    display: inline-block;
 }
 
 .Country-border-country {
