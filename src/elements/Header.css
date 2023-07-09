@@ -25,3 +25,9 @@
 .Header-container a:hover {
     text-decoration: underline;
 }
+
+.Header-btn {
+    padding-inline: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}

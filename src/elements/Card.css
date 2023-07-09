@@ -46,10 +46,26 @@
     transform: translateY(-15px);
     box-shadow: inset 0px 0px 10px 5px var(--clr-neutral-075);
     position: relative;
-    z-index: -11;
+    z-index: -11;   
 }
 
 .Card-content h4 {
     font-size: 1.5em;
     padding-top: 25px;
+    font-weight: 500;
+}
+
+[app_theme=dark] .Card-content{
+    color: var(--clr-neutral-100);
+}
+
+[app_theme=dark] .Card-content {
+    background-color: var(--clr-neutral-020);
+    box-shadow: inset 0px 0px 10px 5px var(--clr-neutral-015);
+    border: 1px solid var(--clr-neutral-075);
+}
+
+[app_theme=dark] .Card-body img {
+    border: 3px solid var(--clr-neutral-100);
+    box-shadow: none;
 }

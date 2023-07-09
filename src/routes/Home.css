@@ -1,3 +1,14 @@
+.Home-body {
+    padding-top: 30px;
+    position: relative;
+    z-index: 10;
+    min-height: calc(100vh - 56px);
+}
+
+[app_theme=dark] .Home-body {
+    background-color: var(--clr-neutral-015);
+}
+
 .Home-container {
     display: flex;
     flex-wrap: wrap;
@@ -6,7 +17,7 @@
 
 .Home-input {
     display: block;
-    margin: 30px auto;
+    margin: 0 auto 30px auto;
     border-radius: 10px;
     padding-inline: 10px;
     min-width: 500px;
@@ -20,4 +31,8 @@
     .Home-input {
         min-width: 250px;
     }
+}
+
+[app_theme=dark] .Home-input {
+    box-shadow: 0px 0px 15px 5px var(--clr-neutral-030);
 }

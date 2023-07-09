@@ -1,5 +1,5 @@
 .Country-body {
-    
+    min-height: calc(100vh - 56px);
 }
 
 .Country-container {
@@ -72,4 +72,20 @@
 
 .Country-border-country:hover {
     text-decoration: underline;
+}
+
+[app_theme=dark] .Country-body {
+    background-color: var(--clr-neutral-015);
+}
+
+[app_theme=dark] .Country-informations,
+[app_theme=dark] .Country-name,
+[app_theme=dark] .Country-official-name,
+[app_theme=dark] .Country-border-country {
+    color: var(--clr-neutral-100);
+}
+
+[app_theme=dark] .Country-informations {
+    box-shadow: inset 0px 0px 10px 5px var(--clr-neutral-030);
+    border: 1px solid var(--clr-neutral-100);
 }

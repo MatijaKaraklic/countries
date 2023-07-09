@@ -30,8 +30,10 @@ function Home() {
 
   const renderCards = (data, search) => {
     
+    let index = 0;
     const cards = data.map(country => {
-      const card = (<Card data={{ country: country }} />);
+      index++;
+      const card = (<Card key={index} data={{ country: country }} />);
 
       if(search === '') return card;
 
